@@ -23,7 +23,7 @@ fn main() {
 
     let o = o.trim();
 
-    // Lê as colunas e linhas da área verde da matriz
+    // Calcula a soma e a média SOMENTE da área verde da matriz
     for i in 1..=10 {
         soma += matriz[i][11];
         contador += 1;
@@ -45,7 +45,7 @@ fn main() {
         contador += 1;
     }
 
-        // Constrói a representação da matriz, enumera os pontos verdes com "X" e os demais com "."
+        // Imprime a matriz com os elementos da área direita destacados como pedido
         let mut representacao_matriz = Vec::new();
         for i in 0..tamanho {
             let mut linha = String::new();
